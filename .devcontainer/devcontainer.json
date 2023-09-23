@@ -12,6 +12,9 @@
   "customizations": {
     "vscode": {
       "settings": {
+        "cSpell.ignoreWords": [
+            "fastapi"
+        ],
         "files.eol": "\n",
         "files.insertFinalNewline": true,
         "files.trimTrailingWhitespace": true,
