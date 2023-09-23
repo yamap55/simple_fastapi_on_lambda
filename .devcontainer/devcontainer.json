@@ -13,7 +13,9 @@
     "vscode": {
       "settings": {
         "cSpell.ignoreWords": [
-            "fastapi"
+            "fastapi",
+            "uvicorn",
+            "gunicorn"
         ],
         "files.eol": "\n",
         "files.insertFinalNewline": true,
