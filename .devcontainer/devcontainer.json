@@ -15,7 +15,8 @@
         "cSpell.ignoreWords": [
             "fastapi",
             "uvicorn",
-            "gunicorn"
+            "gunicorn",
+            "mangum"
         ],
         "files.eol": "\n",
         "files.insertFinalNewline": true,
