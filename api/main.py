@@ -1,5 +1,6 @@
 """FastApi main"""
 from fastapi import FastAPI
+from mangum import Mangum
 
 app = FastAPI()
 
@@ -14,3 +15,6 @@ def read_root():
 def read_item(item_id: int, q: str = ""):
     """Read item"""
     return {"item_id": item_id, "q": q}
+
+
+handler = Mangum(app, lifespan="off")
