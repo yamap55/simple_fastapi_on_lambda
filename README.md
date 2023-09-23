@@ -15,3 +15,10 @@
 4. しばらく待つ
    - 初回の場合コンテナー image の取得や作成が行われる
 5. 起動したら開発可能
+
+## ローカル環境で起動
+
+```shell
+cd /project/api/
+gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
+```
