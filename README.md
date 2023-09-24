@@ -25,3 +25,11 @@
 cd /project/api/
 uvicorn main:app
 ```
+
+## Lambdaで動作させる
+
+- GitHub Actionsの `buildLambdaModule` でLambdaにアップロード可能なモジュールが作成される
+- Lambadaに出力されたzipファイルをアップロードする
+- API Gatewayの設定をする
+
+refs. https://makolab.dev/fastapi-on-lambda/
