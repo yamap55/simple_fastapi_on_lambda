@@ -1,9 +1,9 @@
-name: createLambdaModule
+name: buildLambdaModule
 
 on: [push]
 
 jobs:
-  createLambdaModule:
+  buildLambdaModule:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
       - name: Build lambda module
         run: |
           source .venv/bin/activate
-          ./tools/create_lambda_module.sh
+          ./tools/build_lambda_module.sh
       - name: Upload Lambda Module
         uses: actions/upload-artifact@v3
         with:
