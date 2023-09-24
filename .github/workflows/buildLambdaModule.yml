@@ -29,9 +29,11 @@ jobs:
       - name: Build lambda module
         run: |
           source .venv/bin/activate
-          ./tools/build_lambda_module.sh
+          poetry build
+          pip install --upgrade -t ./dist/package dist/*.whl
+          find dist/package -name "*.pyc" -type f -delete
       - name: Upload Lambda Module
         uses: actions/upload-artifact@v3
         with:
           name: artifact
-          path: dist/artifact.zip
+          path: dist/package
