@@ -6,6 +6,9 @@
 
 - Python : 3.11
 - FastApi
+- Uvicorn
+  - ASGI準拠のアプリケーションサーバー
+- Mangum
 
 ### 開発手順
 
@@ -20,5 +23,5 @@
 
 ```shell
 cd /project/api/
-gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
+uvicorn main:app
 ```

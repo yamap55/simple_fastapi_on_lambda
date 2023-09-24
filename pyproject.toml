@@ -8,11 +8,11 @@ license = "Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 [tool.poetry.dependencies]
 python = "^3.8"
 fastapi = "^0.103.1"
-uvicorn = {extras = ["standard"], version = "^0.23.2"}
-gunicorn = "^21.2.0"
 mangum = "^0.17.0"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
+uvicorn = { extras = ["standard"], version = "^0.23.2" }
+
 # lint
 black = "23.3.0"
 ruff = "^0.0.291"
